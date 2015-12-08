@@ -1,18 +1,18 @@
 function BinarySearch(A,target,firstIndex){
 		  var low=0, 
-			    high = A.length-1,
-			    mid,
-			    result = -1;
+		       high = A.length-1,
+			mid,
+			result = -1;
 			while(low <= high ){
 			   mid = Math.floor((low+ high)/2);
 				if(target == A[mid]){
-          result = mid;
-            if(firstIndex){
-              high = mid-1;// this is for first ocuurance toword left (lower indeces )
-            }
+			          result = mid;
+			            if(firstIndex){
+			                 high = mid-1;// this is for first ocuurance toword left (lower indeces )
+			                }
 				    else{   
-              low = mid+1;// this is for Last occurrence  toword right (higher indices) 
-                }
+			              	low = mid+1;// this is for Last occurrence  toword right (higher indices) 
+			                }
 				}
 				else if(target < A[mid]){
 					high = mid-1;
@@ -30,7 +30,7 @@ function countNumberOcuurance(A, target){
        {
          return -1;
        }
-  	 else{
+    else{
         lastIndex = BinarySearch(A,target,false);
       }
   /*var lastIndex = BinarySearch(A,target,false);
