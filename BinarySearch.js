@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<script>
-
 	/*this function for binary search with ittration 
 	 itarion is allway good performanced 
 	time complexisi take log(n) or O(log n)
@@ -30,10 +25,5 @@ function binarySearch(arr,target){
 		}
 		var arr = [1, 3, 6, 10, 14, 15, 18, 20, 25, 33, 36, 40, 43, 44, 48, 50];
 console.log(binarySearch(arr,43));
-	</script>
-	
-</head>
-	<body>
-	
-	</body>
-</html>
+
+
